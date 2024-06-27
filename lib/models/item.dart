@@ -63,4 +63,36 @@ class Item {
       'picture': picture,
     };
   }
+
+  Item copyWith({
+    String? id,
+    String? name,
+    String? brand,
+    int? availableQuantity,
+    String? nameInUrdu,
+    String? miniUnit,
+    String? packaging,
+    double? purchaseRate,
+    double? saleRate,
+    int? minStock,
+    DateTime? addedEditDate,
+    String? location,
+    String? picture,
+  }) {
+    return Item(
+      id: id ?? this.id,
+      name: name ?? this.name,
+      brand: brand ?? this.brand,
+      availableQuantity: availableQuantity ?? this.availableQuantity,
+      nameInUrdu: nameInUrdu ?? this.nameInUrdu,
+      miniUnit: miniUnit ?? this.miniUnit,
+      packaging: packaging ?? this.packaging,
+      purchaseRate: purchaseRate ?? this.purchaseRate,
+      saleRate: saleRate ?? this.saleRate,
+      minStock: minStock ?? this.minStock,
+      addedEditDate: addedEditDate ?? this.addedEditDate,
+      location: location ?? this.location,
+      picture: picture ?? this.picture,
+    );
+  }
 }

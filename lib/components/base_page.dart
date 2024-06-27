@@ -50,6 +50,20 @@ class NavigationDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: Icon(Icons.pages),
+            title: Text('Bills'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/bills');
+            }
+          ),
+          ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Customers'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/customers');
+              }
+          ),
+          ListTile(
             leading: Icon(Icons.logout),
             title: Text('Logout'),
             onTap: () {
